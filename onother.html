@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problem3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container mainDiv">
+    <header class="header1" ><h1>ID Card Generator</h1></header>
+        <div class="secDiv">
+        <h2 style="color: #4b7bec;">Enter Student Details</h2>
+        <!-- <form> -->
+            <div class="form-group">
+              <label>Enter Name:</label>
+              <input type="text" class="form-control" style="max-width: 20rem; border-radius: 10px;" id="Uname">
+              <i class="fa-solid fa-user"></i>              
+            </div>
+            <div class="form-group">
+                <label>Enter college name</label>
+                <input type="text" class="form-control" style="max-width: 20rem; border-radius: 10px" id="ColName">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+            <div class="form-group">
+                <label>Enter location</label>
+                <input type="text" class="form-control" style="max-width: 20rem; border-radius: 10px" id="Location">
+                <i class="fa-solid fa-location-pin"></i>
+              </div>
+              <div class="form-group">
+                <label>Enter Student's Picture</label>
+                <input name="photo" type="file" accept="image/*" onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])">
+              </div>
+            <button type="submit" class="btn btn-primary" id="getCard" onclick="myFunction()">Generate Card</button>
+          <!-- </form> -->
+        </div>
+        
+          
+        <div class="left_div">
+          <h3>Generated ID Card</h3>
+          <div class="content">
+            <div class="imgDisplay">
+              <img id="output" src="kd1.png">
+            </div>
+            <div class="StuData">
+              <ul>
+                <li id="name">abc</li>
+                <li id="cName">abc</li>
+                <li id="loct">abc</li>
+              </ul>
+            </div>
+          
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <script>
+        function myFunction() {
+        const Uname = document.getElementById("Uname").value;
+        const ColName = document.getElementById("ColName").value;
+        const Location = document.getElementById("Location").value;
+    
+        document.getElementById("name").innerHTML =  "Name :" + Uname;
+        document.getElementById("cName").innerHTML =  "College Name :" + ColName;
+        document.getElementById("loct").innerHTML =  "Location :" + Location;
+    
+    }
+    
+
+    </script>
+    
+</body>
+</html>

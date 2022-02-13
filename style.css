@@ -1,0 +1,90 @@
+.header1{
+    background-color: #4b7bec; 
+    text-align:center; 
+    color: #ffffff;
+    width: 99.50rem;
+    height: 50px;
+    padding-top: 1px;
+    padding-right: 10px;
+    
+    
+}
+
+h1{
+    /* padding-top: 1px; */
+    margin-top: 1px;
+}
+
+.mainDiv{
+    
+    width: 100rem;
+    border: #4b7bec solid;
+    margin-top: 5rem;
+    height: 50rem;
+    padding-left: 0px;
+    border-radius: 15px;
+}
+.secDiv{
+    margin-left: 100px;
+    float: left;
+}
+
+
+.StuData{
+    width : 1000px
+}
+/* .secMainDiv{
+    float: right;
+    text-align: center;
+    
+} */
+
+.left_div{
+    float: right;
+    width: 50%;
+    height: 60%;
+    margin-top: 80px;
+    margin-right: 10rem;
+    border: #159 solid 1px;
+    border-radius: 10px;
+}
+
+img{
+    float: left;
+    width: 10rem;
+    border-radius: 40px;
+    /* margin-left: 1rem; */
+
+}
+
+h3{
+    text-align: center;
+}
+
+.content{
+    width: 400px;
+    height: 60%;
+    /* border: #159 solid 1px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 30px;
+    border: 1px solid #00cec9;
+    border-radius: 12px;
+    box-shadow: 0 1px 5px grey;;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.imgDisplay{
+    background: #159;
+    width: 150%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
